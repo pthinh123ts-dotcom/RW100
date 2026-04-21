@@ -2,11 +2,11 @@ import java.time.LocalDate;
 import java.util.Timer;
 
 public class Exam {
-    int ExamID;
-    int Code;
-    String Title;
-    CategoryQuestion CategoryID;
-    int Duration;
-    int CreatorID;
-    LocalDate CreateDate;
+    int examid;
+    int code;
+    String title;
+    CategoryQuestion categoryid;
+    int duration;
+    int creatorID;
+    LocalDate createDate;
 }

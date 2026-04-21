@@ -6,6 +6,8 @@ public class Account {
     String fullname;
     Department department;
     Position position;
-    LocalDate localDate;
+    LocalDate createdate;
+    Group[] groups;
+    String email;
 }
 
