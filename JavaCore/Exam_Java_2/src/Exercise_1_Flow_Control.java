@@ -225,6 +225,135 @@ public class Exercise_1_Flow_Control {
                     "   FullName : " + accList[i].fullname +
                     "   Phòng ban : " + accList[i].department.departmentname);
         }
+        System.out.println("Question15 : ");
+        for (int i = 1; i <= 20; i++) {
+            if (i%2 ==0 ) {
+            System.out.print(i+ "  ");
+        }
+        }
+
+
+        // WHILE
+        System.out.println("Question16-11 : ");
+        int i = 0;
+        while (i< accList.length) {
+            System.out.println("Thông tin Account thứ " + (i + 1) +
+                    "   Email :" + accList[i].email +
+                    "   FullName : " + accList[i].fullname +
+                    "   Phòng ban : " + accList[i].department.departmentname);
+            i++;
+
+
+        }
+        System.out.println("Question16-12 : ");
+        int j = 0;
+        while (j < departmentList.length){
+            System.out.println("Thông tin phòng ban thứ : "+ (j+1) +
+                    " ID là : " + departmentList[j].departmentid +
+                    " Tên phòng ban là : " + departmentList[j].departmentname);
+            j++;
+        }
+        System.out.println("Question16-13 : ");
+        int a = 0;
+        while (a< accList.length) {
+            if (a !=1 ) {
+
+                System.out.println("Thông tin Account thứ " + (a + 1) +
+                        "   Email :" + accList[a].email +
+                        "   FullName : " + accList[a].fullname +
+                        "   Phòng ban : " + accList[a].department.departmentname);}
+            a++;
+
+            }
+        System.out.println("Question16-14 : ");
+        int d = 0;
+        while (d < accList.length){
+            if (accList[d].accountID<4) {
+                System.out.println("Thông tin Account thứ " + (d + 1) +
+                        "   Email :" + accList[d].email +
+                        "   FullName : " + accList[d].fullname +
+                        "   Phòng ban : " + accList[d].department.departmentname);
+            }
+            d++;
+        }
+        System.out.println("Question16-15 : ");
+        while (i <=20){
+            if (i %2 ==0)
+                System.out.println(" " + i);
+            i++;
+
+        }
+        // DO - WHITE
+        System.out.println("Question17-10 : ");
+        int i1 = 0;
+        do {
+            System.out.println("Thông tin Account thứ " + (i1 + 1) +
+                    "   Email :" + accList[i1].email +
+                    "   FullName : " + accList[i1].fullname +
+                    "   Phòng ban : " + accList[i1].department.departmentname);
+            
+            i1++;
+        } while (i1 < accList.length);
+
+        System.out.println("Question17-11 : ");
+        int j1 = 0;
+        do {
+            System.out.println("Thông tin phòng ban thứ : "+ (j1+1) +
+                    " ID là : " + departmentList[j1].departmentid +
+                    " Tên phòng ban là : " + departmentList[j1].departmentname);
+            j1++;
+        } while (j1 < departmentList.length);
+
+        System.out.println("Question17-12 : ");
+        int j2 =0;
+        do {
+            System.out.println("Thông tin phòng ban thứ : "+ (j2+1) +
+                    " ID là : " + departmentList[j2].departmentid +
+                    " Tên phòng ban là : " + departmentList[j2].departmentname);
+            j2++;
+        } while (j2 < 2);
+        System.out.println("Question17-13 : ");
+        int s1 = 0;
+        do {
+            if (s1 != 1) {
+                System.out.println("Thông tin Account thứ " + (s1 + 1) +
+                        "   Email :" + accList[s1].email +
+                        "   FullName : " + accList[s1].fullname +
+                        "   Phòng ban : " + accList[s1].department.departmentname);
+            }
+            s1++;
+        }while (s1< accList.length);
+
+        System.out.println("Question17-14 : ");
+        int s2 = 0;
+        do {
+            if (accList[s2].accountID<4) {
+                System.out.println("Thông tin Account thứ " + (s2 + 1) +
+                        "   Email :" + accList[s2].email +
+                        "   FullName : " + accList[s2].fullname +
+                        "   Phòng ban : " + accList[s2].department.departmentname);
+            }
+            s2++;
+        }while (s2< accList.length);
+
+        System.out.println("Question17-15 : ");
+        int i3 = 1;
+        do {
+            if (i3 % 2 == 0) {
+                System.out.print(i3 + "  ");
+            }
+            i3++;
+        } while (i3 <= 20);
+    }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -232,4 +361,5 @@ public class Exercise_1_Flow_Control {
 
 
 }
-}
+
+
