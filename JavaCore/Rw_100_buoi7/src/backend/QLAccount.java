@@ -59,7 +59,7 @@ public class QLAccount {
             if (connection != null) {
                 System.out.println("Kết nối thành công");
                 
-                String sql = "SELECT * FROM rw100_testing_system.account WHERE username = ?";
+                String sql = "SELECT * FROM rw100_testing_system.account WHERE username LIKE ?";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 statement.setString(1, findUserName);
                 ResultSet resultSet = statement.executeQuery();
@@ -90,7 +90,7 @@ public class QLAccount {
             Connection connection = DriverManager.getConnection(url, username, password);
 
             if (connection != null) {
-                String sql = "SELECT * FROM rw100_testing_system.account WHERE username = ? and fullname =? ";
+                String sql = "SELECT * FROM rw100_testing_system.account WHERE username LIKE ? and fullname LIKE ? ";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 statement.setString(1, findUserName);
                 statement.setString(2,findFullName);
